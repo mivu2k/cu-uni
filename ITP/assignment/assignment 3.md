@@ -72,9 +72,8 @@ int main()
 
     return 0;
 }
-
-
 ```
+![console q1](https://drive.google.com/file/d/1U-bHT9q3_oc9QAHwR5hpaGWl5ysY7y8B/view?usp=share_link)
 ##### Question 2
 
 Write a user defined function named Upper-half() which takes a two dimensional array A, with size N rows and N columns as argument and prints the upper half of the array.
@@ -169,6 +168,7 @@ int main()
 }
 
 ```
+![console q2](https://drive.google.com/file/d/1VB_4k95nG2c9waqpOhJmn_gD87qNu67C/view?usp=share_link)
 ##### Question 3
 
 Write a function in C++:
@@ -264,6 +264,7 @@ int main()
 }
 
 ```
+![console q3](https://drive.google.com/file/d/1Ent-LCJZUAoi9lzBtGCQLLcZ9kSZSuDj/view?usp=share_link)
 ##### Question 4
 
 Write a program to add two array A and B of size m x n.
@@ -284,7 +285,7 @@ int main()
     int result[max][max];
     int r;
 
-    cout << "Enter size of matrix in odd";
+    cout << "Enter size of matrix :";
     cin >> r;
 
     for (int i = 0; i < r; i++)
@@ -313,6 +314,7 @@ int main()
     }
 
     // for dispalying out the matrixA
+    cout << "Matrix A" << endl;
     cout << "---------------------------" << endl;
 
     for (int i = 0; i < r; i++)
@@ -325,6 +327,8 @@ int main()
     }
     // for dispalying out the matrixB
     cout << "---------------------------" << endl;
+    cout << "Matrix B" << endl;
+    cout << "---------------------------" << endl;
 
     for (int i = 0; i < r; i++)
     {
@@ -335,6 +339,8 @@ int main()
         cout << endl;
     }
     // for dispalying out the Result
+    cout << "---------------------------" << endl;
+    cout << "Matrix A + Matrix B" << endl;
     cout << "---------------------------" << endl;
 
     for (int i = 0; i < r; i++)
@@ -350,8 +356,8 @@ int main()
 }
 
 ```
-
-###### Question 5
+![console q4](https://drive.google.com/file/d/16p53IrEYcioTsNO7bSlxQzYAcD6vpTnM/view?usp=share_link)
+##### Question 5
 
 Write a program to multiply array A and B of order NxL and LxM.
 
@@ -371,7 +377,7 @@ int main()
     int result[max][max];
     int r;
 
-    cout << "Enter size of matrix in odd";
+    cout << "Enter size of matrix: ";
     cin >> r;
 
     for (int i = 0; i < r; i++)
@@ -403,6 +409,8 @@ int main()
 
     // for dispalying out the matrixA
     cout << "---------------------------" << endl;
+    cout << "Matrix A" << endl;
+    cout << "---------------------------" << endl;
 
     for (int i = 0; i < r; i++)
     {
@@ -414,6 +422,8 @@ int main()
     }
     // for dispalying out the matrixB
     cout << "---------------------------" << endl;
+    cout << "Matrix B" << endl;
+    cout << "---------------------------" << endl;
 
     for (int i = 0; i < r; i++)
     {
@@ -424,6 +434,8 @@ int main()
         cout << endl;
     }
     // for dispalying out the Result
+    cout << "---------------------------" << endl;
+    cout << "Matrix A * Matrix B" << endl;
     cout << "---------------------------" << endl;
 
     for (int i = 0; i < r; i++)
@@ -438,5 +450,5 @@ int main()
     cout << "---------------------------" << endl;
 }
 
-
 ```
+![console q5](https://drive.google.com/file/d/1AwkjlE0kSHT2nFSK0cHWJwSo6ZZ7dzqt/view?usp=share_link)
