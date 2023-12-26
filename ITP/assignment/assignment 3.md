@@ -1,4 +1,6 @@
 # Assignment 3 
+## Muhammad Usman
+## BCS233134
 
 ##### Question 1
  Write a C++ program that performs the following tasks: 
@@ -73,7 +75,7 @@ int main()
     return 0;
 }
 ```
-![console q1](![Alt text](question1.png))
+![q1](question1.png)
 ##### Question 2
 
 Write a user defined function named Upper-half() which takes a two dimensional array A, with size N rows and N columns as argument and prints the upper half of the array.
@@ -168,7 +170,7 @@ int main()
 }
 
 ```
-![console q2](https://drive.google.com/file/d/1VB_4k95nG2c9waqpOhJmn_gD87qNu67C/view?usp=share_link)
+![q2](question2.png)
 ##### Question 3
 
 Write a function in C++:
@@ -264,7 +266,7 @@ int main()
 }
 
 ```
-![console q3](https://drive.google.com/file/d/1Ent-LCJZUAoi9lzBtGCQLLcZ9kSZSuDj/view?usp=share_link)
+![q3](question3.png)
 ##### Question 4
 
 Write a program to add two array A and B of size m x n.
@@ -356,7 +358,7 @@ int main()
 }
 
 ```
-![console q4](https://drive.google.com/file/d/16p53IrEYcioTsNO7bSlxQzYAcD6vpTnM/view?usp=share_link)
+![q4](question4.png)
 ##### Question 5
 
 Write a program to multiply array A and B of order NxL and LxM.
@@ -451,4 +453,4 @@ int main()
 }
 
 ```
-![console q5](https://drive.google.com/file/d/1AwkjlE0kSHT2nFSK0cHWJwSo6ZZ7dzqt/view?usp=share_link)
+![q5](question5.png)
