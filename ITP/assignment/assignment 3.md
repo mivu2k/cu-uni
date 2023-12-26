@@ -73,7 +73,7 @@ int main()
     return 0;
 }
 ```
-![console q1](https://drive.google.com/file/d/1U-bHT9q3_oc9QAHwR5hpaGWl5ysY7y8B/view?usp=share_link)
+![console q1](![Alt text](question1.png))
 ##### Question 2
 
 Write a user defined function named Upper-half() which takes a two dimensional array A, with size N rows and N columns as argument and prints the upper half of the array.
