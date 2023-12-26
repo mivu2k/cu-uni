@@ -91,11 +91,9 @@ e.g.,
 
 ```c++
 #include <iostream>
-#include <string>
 #include <cstdlib>
 #include <iomanip>
 using namespace std;
-const int max = 10;
 void upper_half(int matrix[][10], int r, int c)
 {
     for (int i = 0; i < r; i++)
@@ -190,7 +188,6 @@ Middle Column Sum:	12
 
 ```cpp
 #include <iostream>
-#include <string>
 #include <cstdlib>
 #include <iomanip>
 using namespace std;
