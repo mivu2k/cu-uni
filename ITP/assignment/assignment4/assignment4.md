@@ -56,7 +56,7 @@ int main() {
 }
 
 ```
-![q1](/img/question1.png)
+![q1](img/question1.png)
 ##### Question 2
 Write a C++ program that concatenates two strings str1=”My name is: ”, and str2= name and displays the resulting string in result string.
 
@@ -75,7 +75,7 @@ int main()
 }
 
 ```
-![q2](/img/question2.png)
+![q2](img/question2.png)
 ##### Question 3
 Write a C++ program that replaces all occurrences of a substrings y =”quick”, and z=”lazy” in string x=”The quick brown fox jumped over the lazy dog, but the quick brown dog also jumped over the lazy fox.”. Replace x with y. OR In the actual string where y=”quick” it should be replaced with “lazy” and vice versa. 
 ```cpp
@@ -104,7 +104,7 @@ int main()
 }
 
 ```
-![q3](/img/question3.png)
+![q3](img/question3.png)
 ##### Question 4
 Write a C++ program that reverses a given string “defied” and displays the reversed version.
 ```cpp
@@ -125,7 +125,7 @@ int main()
 }
 
 ```
-![q4](/img/question4.png)
+![q4](img/question4.png)
 ##### Question 5
 Write a program to compare two strings and determine if they are equal. e.g. str1 = “Albama”, and str2 = “Al bama”.
 ```cpp
@@ -144,4 +144,4 @@ int main()
 }
 
 ```
-![q5](/img/question5.png)
+![q5](img/question5.png)
