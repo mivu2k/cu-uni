@@ -3,7 +3,7 @@
 ## BCS233134
 
 ##### Question 1
-![q1](/img/question1i.png)
+![q1](img/question1i.png)
 ```cpp
 #include <iostream>
 using namespace std;
