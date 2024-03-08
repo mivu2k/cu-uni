@@ -1,4 +1,4 @@
-#Assignment Question 1
+<h1>Assignment Question 1</h1>
 <p>
 Define a structure called “car”. The member elements of the car structure are:
 <li>string Model;</li>
@@ -40,7 +40,7 @@ int main() {
 }
 
 ```
-#Assignment Question 2
+<h1>Assignment Question 2</h1>
 
 <p>Q: Write a program that implements the following using C++ struct. The program should finally displays contactInfo values for 10 people.</p>
 
