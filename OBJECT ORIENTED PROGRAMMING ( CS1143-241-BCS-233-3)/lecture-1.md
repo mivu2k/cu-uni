@@ -85,9 +85,9 @@ int main() {
     return 0;
 }
 
+```
 
-
-#Assignment Question 3
+<h1>Assignment Question 3 </h1>
 
 <p>Write a C++ program to calculate the total salary of an employee using Classes:
 <li>
@@ -104,6 +104,7 @@ You must use the following formula to calculate the total salary of an employee:
 <li>You have also need to show the employee whose slary is maximum salary.using your itp concepts.
 
 <li>using only parameterized constructor. you also know construtor is member function.also explor using This pointer (this->)</p>
+
 
 ```
 #include <iostream>
@@ -167,12 +168,17 @@ int main()
     cout << "Maximum salary among the employees: " << maxSalary << endl;
     return 0;
 }
-
 ```
 
-#Assignment Question 4
+
+
+
+
+<h1>Assignment Question 4 </h1>
 <img src="img/q4-1.png">
 <img src="img/q4-2.png">
+
+
 
 ```
 #include <iostream>
@@ -385,5 +391,4 @@ int main() {
     cout << "**************************************************" << endl;
     return 0;
 }
-
 ```
