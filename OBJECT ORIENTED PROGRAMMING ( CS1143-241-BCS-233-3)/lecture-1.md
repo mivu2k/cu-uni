@@ -15,7 +15,7 @@ Create an array of 30 cars. Get input for all 30 cars from the user. Then the pr
 #include <iostream>
 
 using namespace std;
-
+// structure car
 struct Car{
     string model;
     int year;
@@ -23,12 +23,15 @@ struct Car{
     
 };
 int main() {
-    Car arr[30];
-    for (int i = 0; i < 3; i++) {
+    Car arr[30]; // structure calling
+
+    // taking input
+    for (int i = 0; i < 3; i++) { 
         cout << "Enter car detail " << i+1 << endl;
         cout << "Enter Car Model, year and price seperated by space :";
         cin >> arr[i].model >> arr[i].year >> arr[i].price;
     }
+    // for displaying
     for (int i = 0; i < 3; i++) {
         if (arr[i].price >= 500000) {
             cout << i+1 << " : Model: " <<  arr[i].model << "  Year: "  <<arr[i].year << "  Price: "  << arr[i].price << endl;
@@ -50,24 +53,30 @@ int main() {
 #include <iostream>
 
 using namespace std;
-
+// structure a
 struct A{
     string city;
     string country;
 };
+//structure b
 struct ContactInfo{
     string name;
     int phoneNo;
     A address;
     
 };
+
 int main() {
+    // structure call
     ContactInfo arr[10];
+
+    // taking input
     for (int i = 0; i < 3; i++) {
         cout << "Enter contact Detail " << i+1 << endl;
         cout << "Enter Contact Name, Phone No, City And Address seperated by space :";
-        cin >> arr[i].name >> arr[i].phoneNo >> arr[i].address.city >> arr[i].address.country;
+        cin >> arr[i].name >> arr[i].phoneNo >> arr[i].address.city >> arr[i].address.country; // nested structre calling
     }
+    // for displaying
     for (int i = 0; i < 3; i++) {
         
             cout << i+1 << " : Name: " <<  arr[i].name  << "  Phone No: "  <<arr[i].phoneNo<< "  City: "  << arr[i].address.city << "  Country: "  << arr[i].address.country<< endl;
@@ -76,8 +85,7 @@ int main() {
     return 0;
 }
 
-```
-<<<<<<< HEAD
+
 
 #Assignment Question 3
 
@@ -100,8 +108,10 @@ You must use the following formula to calculate the total salary of an employee:
 ```
 #include <iostream>
 using namespace std;
+// class
 class Employee
 {
+    // variables
 private:
     double Basic;
     double HRA;
@@ -113,6 +123,7 @@ private:
     double Insurance;
 
 public:
+// parametrize constuctor
     Employee(double b, double hra, double transport, double fbp, double bonus, double pf, double tax, double insurance)
     {
         Basic = b;
@@ -124,6 +135,7 @@ public:
         IncomeTax = tax;
         Insurance = insurance;
     }
+    //function
     double TotalSalary()
     {
         return Basic + HRA + TransportAllowance + FBPAllowance +
@@ -132,6 +144,7 @@ public:
 };
 int main()
 {
+    // class calling and passing value direct to constructor
     Employee emp1(50000, 7000.5, 1000.5, 300.5, 40.5, 5.5, 6.5, 7.5);
     Employee emp2(50000, 6000.5, 900.5, 200.5, 40.5, 5.5, 6.5, 7.5);
     Employee emp3(55000, 5000.5, 800.5, 100.5, 40.5, 5.5, 6.5, 7.5);
@@ -139,9 +152,10 @@ int main()
     cout << "Total salary for employee 1: " << emp1.TotalSalary() << endl;
     cout << "Total salary for employee 2: " << emp2.TotalSalary() << endl;
     cout << "Total salary for employee 3: " << emp3.TotalSalary() << endl;
-
+    // geting value from class function
     double maxSalary = emp1.TotalSalary();
 
+// for maximum value
     if (emp2.TotalSalary() > maxSalary)
     {
         maxSalary = emp2.TotalSalary();
@@ -230,7 +244,7 @@ public:
         }
         else if (capacity % 2 != 0 || capacity % 3 != 0)
         {
-            capacity = round(capacity / 2) * 2;//roundDown =  (numToRound) / multiple) * multiple
+            capacity = round(capacity / 2) * 2; //for roundDown round is used cmath used in header
         }
         else
         capacity = c;
