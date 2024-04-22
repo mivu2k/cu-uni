@@ -77,3 +77,299 @@ int main() {
 }
 
 ```
+
+#Assignment Question 3
+
+<p>Write a C++ program to calculate the total salary of an employee using Classes:
+<li>
+You must use the following formula to calculate the total salary of an employee:
+<li>Basic + HRA + TrasportAllowance + FBPAllowance + Bonus - ProvidentFund - Income Tax – Insurance
+<li>You have to declare a class named as Employee Create data member according to total salary of an employee 
+<li>Create a function to initialize variables according to total salary of an employee.
+<li>You have to calculate total salary of an employee using function named as TotalSalary.
+<li>You must create three objects and initialize different data members accordingly.
+<li>For first object take the data member values as 50000,7000.5, 1000.5, 300.5, 40.5, 5.5, 6.5, 7.5
+<li>For second object take the data member values as 50000,6000.5, 900.5, 200.5, 40.5, 5.5, 6.5, 7.5
+<li>For third object take the data member values as 55000,5000.5, 800.5, 100.5, 40.5, 5.5, 6.5, 7.5 
+<li>Find the output of 3 different employees' salary by access the member function 
+<li>You have also need to show the employee whose slary is maximum salary.using your itp concepts.
+
+<li>using only parameterized constructor. you also know construtor is member function.also explor using This pointer (this->)</p>
+
+```
+#include <iostream>
+using namespace std;
+class Employee
+{
+private:
+    double Basic;
+    double HRA;
+    double TransportAllowance;
+    double FBPAllowance;
+    double Bonus;
+    double ProvidentFund;
+    double IncomeTax;
+    double Insurance;
+
+public:
+    Employee(double b, double hra, double transport, double fbp, double bonus, double pf, double tax, double insurance)
+    {
+        Basic = b;
+        HRA = hra;
+        TransportAllowance = transport;
+        FBPAllowance = fbp;
+        Bonus = bonus;
+        ProvidentFund = pf;
+        IncomeTax = tax;
+        Insurance = insurance;
+    }
+    double TotalSalary()
+    {
+        return Basic + HRA + TransportAllowance + FBPAllowance +
+               Bonus - ProvidentFund - IncomeTax - Insurance;
+    }
+};
+int main()
+{
+    Employee emp1(50000, 7000.5, 1000.5, 300.5, 40.5, 5.5, 6.5, 7.5);
+    Employee emp2(50000, 6000.5, 900.5, 200.5, 40.5, 5.5, 6.5, 7.5);
+    Employee emp3(55000, 5000.5, 800.5, 100.5, 40.5, 5.5, 6.5, 7.5);
+
+    cout << "Total salary for employee 1: " << emp1.TotalSalary() << endl;
+    cout << "Total salary for employee 2: " << emp2.TotalSalary() << endl;
+    cout << "Total salary for employee 3: " << emp3.TotalSalary() << endl;
+
+    double maxSalary = emp1.TotalSalary();
+
+    if (emp2.TotalSalary() > maxSalary)
+    {
+        maxSalary = emp2.TotalSalary();
+    }
+    if (emp3.TotalSalary() > maxSalary)
+    {
+        maxSalary = emp3.TotalSalary();
+    }
+    cout << "Maximum salary among the employees: " << maxSalary << endl;
+    return 0;
+}
+
+```
+
+#Assignment Question 4
+<img src="img/q4-1.png">
+<img src="img/q4-2.png">
+
+```
+#include <iostream>
+#include<cmath>
+using namespace std;
+class RollerCoaster
+{
+private:
+    string name;
+    float height;
+    float length;
+    float speed;
+    int capacity;
+    int currentNumRiders;
+    bool rideInProgress;
+    
+public:
+    
+    //default constructor
+    RollerCoaster(){
+        name = "Roller Coaster";
+        height = 500;
+        length = 2000;
+        capacity = 20;
+        rideInProgress = false;
+        speed = 0.0;
+        currentNumRiders = 0;
+    }
+    
+    // parameterized constructor
+    RollerCoaster(string n, float h, float l, float s, int c){
+            name = n;
+            height = h;
+            length = l;
+            speed = s;
+            capacity = c;
+            currentNumRiders = 0;
+            rideInProgress = false;
+            
+            if (capacity <= 3){
+                capacity = 4;
+            }
+            else if (capacity % 2 != 0 || capacity % 3 != 0){
+                capacity = round(capacity / 2) * 2;//roundDown =  (numToRound) / multiple) * multiple
+            }
+    }
+    
+    // setters
+    
+    void setName(string n){
+        name = n;
+    }
+    void setHeight(float h){
+        height = h;
+    }
+    
+    void setLenght(float l){
+        length=l;
+    }
+    
+    void setSpeed(float s){
+        speed = s;
+    }
+    
+    void setCapacity(int c){
+        if (capacity <= 3)
+        {
+            capacity = 4;
+        }
+        else if (capacity % 2 != 0 || capacity % 3 != 0)
+        {
+            capacity = round(capacity / 2) * 2;//roundDown =  (numToRound) / multiple) * multiple
+        }
+        else
+        capacity = c;
+    }
+    
+    void setCurrentNumRiders(int num){
+        currentNumRiders = num;
+    }
+    
+    void setrideInProgressress(bool inProgress){
+        rideInProgress= inProgress;
+    }
+
+    //getters
+    
+    string getName(){
+        return name;
+    }
+    
+    float getHeight(){
+        return height;
+    }
+    
+    float getLength(){
+        return length;
+    }
+    
+    float getSpeed(){
+        return speed;
+    }
+    
+    int getCapacity(){
+        return capacity;
+    }
+    
+    int getCurrentNumRider(){
+        return currentNumRiders;
+    }
+    
+    bool getrideInProgressress(){
+        return rideInProgress;
+    }
+    
+    // start ride
+    int startRide() {
+        do{
+            if (currentNumRiders == capacity) {
+                rideInProgress = true;
+                return 0;
+            }
+            else {
+                return capacity - currentNumRiders;  // for empty seats
+            }
+        }
+        while (!rideInProgress); //if ride is already in progress
+    }
+    
+    // stop ride
+    void stopRide() {
+        if (rideInProgress) {
+            rideInProgress = false;
+        }
+    }
+    
+    void unloadRiders() {
+        if (!rideInProgress) {
+            currentNumRiders = 0;
+        }
+    }
+    
+    // accelerate
+    void accelerate() {
+        int ld = 4;   // BCS233134
+        speed = speed + ld; // dd = last digit
+        cout << speed;
+    }
+    
+    // decelerate
+    void decelerate() {
+        int fd = 2; // BCS233134
+        speed = speed- fd; // fd = first digit
+        cout << speed;
+    }
+
+};
+
+int main() {
+    
+    RollerCoaster Coaster1;// Using default constructor
+    RollerCoaster Coaster2("Falcon's Flight", 190, 4250, 250, 24);// Using parameterized constructor
+    cout << "**************************************************" << endl;
+    cout << "                           Details of Coaster 1:              " << endl;
+    cout << "**************************************************" << endl;
+    cout << "Name: " << Coaster1.getName() <<endl;
+    cout << "Height: " << Coaster1.getHeight() << " meters" << endl;
+    cout << "Length: " << Coaster1.getLength() << " meters" <<endl;
+    cout << "Speed: " << Coaster1.getSpeed() << " km/h" <<endl;
+    cout << "Capacity: " <<Coaster1.getCapacity() << " people" << endl;
+    cout << "Current Number of Riders: " << Coaster1.getCurrentNumRider() <<endl;
+    cout << "Ride In Progress: " << Coaster1.getrideInProgressress() <<endl;
+    cout << "\n";
+    cout << "**************************************************" << endl;
+    cout << "                           Details of Coaster 2:              " << endl;
+    cout << "**************************************************" << endl;
+    cout << "Name: " << Coaster2.getName() << endl;
+    cout << "Height: " << Coaster2.getHeight() << " meters" << endl;
+    cout << "Length: " <<Coaster2.getLength() << " meters" << endl;
+    cout << "Speed: " << Coaster2.getSpeed() << " km/h" << endl;
+    cout << "Capacity: " << Coaster2.getCapacity() << " people" << endl;
+    cout << "Current Number of Riders: " << Coaster2.getCurrentNumRider() <<endl;
+    cout << "Ride In Progress: " << Coaster2.getrideInProgressress() << endl;
+    
+    cout << "\n";
+    cout << "**************************************************" << endl;
+    cout << "                             Acceleration " << endl;
+    cout << "**************************************************" << endl;
+    
+    cout << "Coaster 1: ";
+    Coaster1.accelerate();
+    cout << endl;
+    
+    cout << "Coaster 2: ";
+    Coaster2.accelerate();
+    cout << endl;
+    
+    cout << "**************************************************" << endl;
+    cout << "                            Deceleration " << endl;
+    cout << "**************************************************" << endl;
+    
+    cout << "Coaster 1: ";
+    Coaster1.decelerate();
+    cout << endl;
+    cout << "Coaster 2: ";
+    Coaster2.decelerate();
+    cout << endl;
+    
+    cout << "**************************************************" << endl;
+    cout << "                                    End" << endl;
+    cout << "**************************************************" << endl;
+    return 0;
+}
+
+```
