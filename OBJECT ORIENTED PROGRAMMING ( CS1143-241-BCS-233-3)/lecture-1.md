@@ -330,7 +330,6 @@ public:
     }
 
 };
-
 int main() {
     
     RollerCoaster Coaster1;// Using default constructor
