@@ -1,0 +1,24 @@
+# ninja log v5
+1	1046	1717841354729692220	vehicle_autogen/timestamp	da7df0659ac4c8e8
+1	1046	1717841354729692220	vehicle_autogen/mocs_compilation.cpp	da7df0659ac4c8e8
+1	1046	1717841354729692220	/Users/usman/Desktop/c++/qt/vehicle/build/Qt_6_7_1_for_macOS-Debug/vehicle_autogen/timestamp	da7df0659ac4c8e8
+1	1046	1717841354729692220	/Users/usman/Desktop/c++/qt/vehicle/build/Qt_6_7_1_for_macOS-Debug/vehicle_autogen/mocs_compilation.cpp	da7df0659ac4c8e8
+1052	6125	1717841359830963123	CMakeFiles/vehicle.dir/Car.cpp.o	990bbed4a48e1582
+1050	6137	1717841359830429833	CMakeFiles/vehicle.dir/Vehicle.cpp.o	db7342f434d56e53
+1053	6157	1717841359830897319	CMakeFiles/vehicle.dir/Truck.cpp.o	b3dde8c1dfa0c39e
+1056	6200	1717841359904974350	CMakeFiles/vehicle.dir/Customer.cpp.o	9ee09b34b0e2008
+1059	8724	1717841362402290864	CMakeFiles/vehicle.dir/Reservation.cpp.o	6344a0439fa00551
+1057	9034	1717841362733330335	CMakeFiles/vehicle.dir/CustomerManager.cpp.o	15a54ba10aacd6c0
+1048	9543	1717841363244604973	CMakeFiles/vehicle.dir/main.cpp.o	4e4157ea358412d2
+1049	9904	1717841363607970524	CMakeFiles/vehicle.dir/mainwindow.cpp.o	c1129c98ddcef983
+6137	10052	1717841363759668630	CMakeFiles/vehicle.dir/Driver.cpp.o	b1cec6dcc1eef108
+6158	10716	1717841364424334102	CMakeFiles/vehicle.dir/DriverManager.cpp.o	13788744f789e3cd
+24	601	1717841617242477000	vehicle_autogen/timestamp	da7df0659ac4c8e8
+24	601	1717841617242477000	vehicle_autogen/mocs_compilation.cpp	da7df0659ac4c8e8
+24	601	1717841617242477000	/Users/usman/Desktop/c++/qt/vehicle/build/Qt_6_7_1_for_macOS-Debug/vehicle_autogen/timestamp	da7df0659ac4c8e8
+24	601	1717841617242477000	/Users/usman/Desktop/c++/qt/vehicle/build/Qt_6_7_1_for_macOS-Debug/vehicle_autogen/mocs_compilation.cpp	da7df0659ac4c8e8
+606	5759	1717841622422041262	CMakeFiles/vehicle.dir/VehicleManager.cpp.o	d773f633b143eb1
+605	6051	1717841622713093134	CMakeFiles/vehicle.dir/main.cpp.o	4e4157ea358412d2
+607	6161	1717841622823471908	CMakeFiles/vehicle.dir/ReservationManager.cpp.o	3159cc4e69bc3384
+602	6165	1717841622828191613	CMakeFiles/vehicle.dir/vehicle_autogen/mocs_compilation.cpp.o	fe2b0caf35982fbf
+603	6323	1717841622990604481	CMakeFiles/vehicle.dir/mainwindow.cpp.o	c1129c98ddcef983

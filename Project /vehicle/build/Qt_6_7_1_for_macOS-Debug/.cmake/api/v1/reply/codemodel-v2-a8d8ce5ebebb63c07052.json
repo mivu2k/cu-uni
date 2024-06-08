@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-99442e20fbec36ef6628.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vehicle",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "vehicle::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vehicle-Debug-fd641e4ab21077036530.json",
+					"name" : "vehicle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vehicle_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vehicle_autogen-Debug-1c4eb5e2e7e37333af31.json",
+					"name" : "vehicle_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vehicle_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vehicle_autogen_timestamp_deps-Debug-dcbf5c0ff5c747af1273.json",
+					"name" : "vehicle_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/usman/Desktop/c++/qt/vehicle/build/Qt_6_7_1_for_macOS-Debug",
+		"source" : "/Users/usman/Desktop/c++/qt/vehicle"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
